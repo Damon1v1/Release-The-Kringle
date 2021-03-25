@@ -1,0 +1,24 @@
+<div class="menu-container">
+  <div class="card-header col-md-10">
+    <h2>
+      Release the Kingle Menu
+    </h2>
+  </div>
+  {{#each menu as |product|}}
+    <div class="dish col-md-5">
+      <p>
+        {{product.id}}.
+        {{product.name}}
+      </p>
+      <p>
+        {{product.description}}
+      </p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        Price:
+        {{product.price}}
+      </p>
+    </div>
+  {{/each}}
+</div>
