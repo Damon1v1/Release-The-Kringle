@@ -13,7 +13,15 @@ https://templatemo.com/tm-529-ramayana
 body {
 	font-family: 'Roboto Slab', sans-serif;
 }
-
+#sidebar {
+    background-color: #79CBE0;
+}
+img {
+border: 1px solid #E08E79;
+}
+ .logo {
+    
+ }
 /* Basic */
 
 input, select, textarea {
@@ -28,14 +36,14 @@ a:hover {
 p {
 	font-size: 14px;
 	line-height: 25px;
-	color: #7a7a7a;
+	color: #90827E;
 	letter-spacing: 0.2px;
 }
 
 h4 {
 	font-size: 19px;
-	font-weight: 700;
-	color: #31323a;
+	font-weight: 500;
+	color: #E08E79;
 	letter-spacing: 0.25px;
 }
 
@@ -47,13 +55,13 @@ img {
 .primary-button a,
 button {
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 500;
 	text-transform: uppercase;
-    background-color: transparent;
+    background-color: #E5CC8F;
 	display: inline-block;
 	padding: 8px 20px;
-	color: #535ba0;
-	border: 2px solid #535ba0;
+	color: #E08E79;
+	border: 1px solid #E08E79;
 	transition: all 0.5s;
 }
 .primary-button a:hover,
@@ -68,7 +76,7 @@ section#search {
 }
 
 section {
-	border-bottom: 3px solid #eee;
+	border-bottom: 1px solid #7998E0;
 	padding-bottom: 100px;
 }
 
@@ -103,12 +111,17 @@ section {
 
 #main > .inner {
     padding: 100px;
+    background-image: url(../images/onwyrd_pattern_40px.png);
+    background-repeat: repeat;
+    background-color: #FAF5E9;
+    background-position: center;
 }
 
 /* Banner */
 .main-banner .container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
+    border: 1px solid #E08E79;
 }
 .main-banner .banner-content {
 	background-image: url(../images/main-banner.jpg);
@@ -118,15 +131,19 @@ section {
 
 .main-banner .banner-content .banner-caption {
     max-width: 450px;
-	background-color: rgba(250,250,250,0.95);
+	background-color: rgba(144,130,126,0.95);
+    background-image: url(../images/onwyrd_pattern_40px_bloodmud.png);
+    background-repeat: repeat;
+    background-position: center;
 	margin: 50px;
 	padding: 50px;
+    border: 1px solid #E08E79;
 }
 
 .main-banner .banner-content .banner-caption h4 {
 	font-size: 38px;
-	font-weight: 700;
-	color: #31323a;
+	font-weight: 500;
+	color: #E08E79;
 	letter-spacing: 0.25px;
 	margin: 0px;
 }
@@ -138,7 +155,7 @@ section {
 
 .main-banner .banner-content .banner-caption span {
 	font-size: 15px;
-	color: #aaaaaa;
+	color: #E5CC8F;
 	letter-spacing: 0.5px;
 	display: inline-block;
 	margin-top: 20px;
@@ -147,6 +164,7 @@ section {
 
 .main-banner .banner-content .banner-caption p {
 	margin-bottom: 30px;
+    color: #E5CC8F;
 }
 
 
@@ -349,7 +367,7 @@ section.contact-form {
     width: 100%;
     height: 50px;
     border-radius: 0px;
-    border: 2px solid #eee;
+    border: 1px solid #eee;
     outline: none;
     padding-left: 20px;
     line-height: 50px;
@@ -370,7 +388,7 @@ section.contact-form {
     height: 160px;
     max-height: 220px;
     border-radius: 0px;
-    border: 2px solid #eee;
+    border: 1px solid #eee;
     outline: none;
     padding-left: 20px;
     line-height: 50px;
@@ -391,7 +409,7 @@ section.contact-form {
     padding: 8px 20px;
     color: #535ba0;
     background-color: transparent;
-    border: 2px solid #535ba0;
+    border: 1px solid #535ba0;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -406,7 +424,7 @@ section.contact-form {
 
 section.tables {
     margin-top: 80px;
-    border-top: 3px solid #eee!important;
+    border-top: 1px solid #eee!important;
     padding-top: 100px;
 }
 
@@ -431,7 +449,7 @@ section.tables .container-fluid {
 }
 
 .alternate-table table td {
-    border-right: 2px solid #f7f7f7;
+    border-right: 1px solid #f7f7f7;
 }
 
 .alternate-table table td:last-child {
@@ -566,7 +584,7 @@ section.forms .container-fluid {
     width: 100%;
     height: 50px;
     border-radius: 0px;
-    border: 2px solid #eee;
+    border: 1px solid #eee;
     outline: none;
     padding-left: 20px;
     line-height: 50px;
@@ -580,7 +598,7 @@ section.forms .container-fluid {
     height: 160px;
     max-height: 220px;
     border-radius: 0px;
-    border: 2px solid #eee;
+    border: 1px solid #eee;
     outline: none;
     padding-left: 20px;
     line-height: 50px;
@@ -705,7 +723,7 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #fff;
-    border: 2px solid #535ba0;
+    border: 1px solid #535ba0;
     transition: all 0.5s;
     background-color: rgba(83,91,160,1);
 }
@@ -727,7 +745,7 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #535ba0;
-    border: 2px solid #535ba0;
+    border: 1px solid #535ba0;
     transition: all 0.5s;
     background-color: rgba(83,91,160,0.0);
 }
@@ -749,7 +767,7 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #fff;
-    border: 2px solid #535ba0;
+    border: 1px solid #535ba0;
     transition: all 0.5s;
     background-color: rgba(83,91,160,1);
     border-radius: 5px;
@@ -772,7 +790,7 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #535ba0;
-    border: 2px solid #535ba0;
+    border: 1px solid #535ba0;
     transition: all 0.5s;
     background-color: rgba(83,91,160,0.0);
     border-radius: 5px;
@@ -795,7 +813,7 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #fff;
-    border: 2px solid #535ba0;
+    border: 1px solid #535ba0;
     transition: all 0.5s;
     background-color: rgba(83,91,160,1);
     border-radius: 20px;
@@ -818,7 +836,7 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #535ba0;
-    border: 2px solid #535ba0;
+    border: 1px solid #535ba0;
     transition: all 0.5s;
     background-color: rgba(83,91,160,0.0);
     border-radius: 20px;
@@ -844,7 +862,7 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #fff;
-    border: 2px solid #535ba0;
+    border: 1px solid #535ba0;
     transition: all 0.5s;
     background-color: rgba(83,91,160,1);
     border-radius: 20px;
@@ -870,7 +888,7 @@ section.buttons .container-fluid {
     text-align: center;
     letter-spacing: 0.5px;
     color: #535ba0;
-    border: 2px solid #535ba0;
+    border: 1px solid #535ba0;
     transition: all 0.5s;
     background-color: rgba(83,91,160,0.0);
     border-radius: 20px;
@@ -928,7 +946,7 @@ section.buttons .container-fluid {
     -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
     -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
     transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-    background-color: #24252d;
+    background-color: #7998E0;
     position: relative;
     width: 420px;
 }
@@ -940,7 +958,7 @@ section.buttons .container-fluid {
 }
 
 #sidebar > .inner > #search  {
-    background-color: #2d2e39;
+    background-color: #E5CC8F;
     height: 100px;
     width: 420px;
     display: inline-block;
@@ -978,10 +996,10 @@ section.buttons .container-fluid {
     -webkit-transition: left 0.5s ease;
     -ms-transition: left 0.5s ease;
     transition: left 0.5s ease;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, );
     border: 0;
     display: block;
-    color: #fff;
+    color: #FAF5E9;
     height: 100px;
     left: 420px;
     line-height: 100px;
@@ -1085,8 +1103,8 @@ section.buttons .container-fluid {
     }
     #sidebar .toggle:before {
         font-size: 1.5rem;
-        color: #fff;
-        background-color: rgba(83,91,160,0.75);
+        color: #8d8984;
+        background-color: #ebe5dd;
     }
     body.is-preload #sidebar {
         display: none;
@@ -1157,7 +1175,10 @@ section.buttons .container-fluid {
 .featured-posts {
 	margin-top: 50px;
 	position: relative;
-	background-color: #1e1f25;
+	background-color: #E08E79;
+    background-image: url(../images/onwyrd_pattern_40px_blood.png);
+    background-repeat: repeat;
+    background-position: center;
 	margin-left: -50px;
 	margin-right: -50px;
 	padding: 50px;
@@ -1203,37 +1224,66 @@ section.buttons .container-fluid {
     display: -ms-flex;
     display: flex;
     position: relative;
-    background-color: #535ba0;
+    background-color: #E08E79;
     margin: -100px -100px 100px -100px;
+    border-bottom: 1px solid #7998E0;
+
+    background-color: #E08E79;
+    background-image: url(../images/onwyrd_pattern_40px_blood.png);
+    background-repeat: repeat;
+    background-position: center;
 }
 
 #header .logo {
-    text-align: right;
-    display: inline-block;	
+    background-image: url(../images/RTK-Logo-header-v1.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    display: block;	
     width: 100%;
-    height: 100px;
+    height: 200px;
     line-height: 100px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
+
 #header .logo a {
+    
+
 	font-size: 36px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #fff;
-	font-weight: 700;
-	margin-right: 100px;
+	color: #FAF5E9;
+	font-weight: 500;
+	margin-right: 50px;
+    float: right;
 }
 
 
 /* Footer */
 
+#footer img {
+    margin-top: 50px;
+    border: none;
+}
+
 #footer .copyright {
+
 	text-align: center;
     color: #fff;
     font-size: 14px;
     margin-top: 50px;
+    padding-bottom: 25px;
 }
 
 #footer .copyright p {
+
 	margin-bottom: 0px;
 }
 
@@ -1248,7 +1298,7 @@ section.buttons .container-fluid {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: #3d4449;
+    color: #E5CC8F;
     font-family: "Roboto Slab", serif;
     font-family: 400;
     letter-spacing: 0.075em;
@@ -1260,7 +1310,7 @@ section.buttons .container-fluid {
 
 #menu ul a,
 #menu ul span {
-	color: #fff;
+	color: #E5CC8F;
     border-bottom: 0;
     cursor: pointer;
     display: block;
@@ -1330,7 +1380,7 @@ section.buttons .container-fluid {
 }
 
 #menu > ul > li {
-    border-top: solid 1px #1a1b20;
+    border-top: solid 1px #E5CC8F;
     margin: 0.5em 0 0 0;
     padding: 0.5em 0 0 0;
 }
