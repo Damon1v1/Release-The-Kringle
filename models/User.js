@@ -16,6 +16,10 @@ User.init(
         validate: {
           len: [4]
         }
+      },
+      points: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
       }
     },
     {
