@@ -27,10 +27,22 @@ border: 1px solid #E08E79;
 
 .page-heading img {
     border: none;
-    width: 30%;
+    width: 25%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.col-md-12 p {
+    max-width: 50%;
+}
+
+.simple-post img {
+    width: 50%
+}
+
+.simple-post p {
+    width: 50%;
 }
 
 /* Basic */
@@ -434,9 +446,9 @@ section.contact-form {
 /* Tables */
 
 section.tables {
-    margin-top: 80px;
+    margin-top: 20px;
     border-top: 1px solid #eee!important;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 section.tables .container-fluid {
@@ -1240,7 +1252,7 @@ section.buttons .container-fluid {
     border-bottom: 1px solid #7998E0;
 
     background-color: #E08E79;
-    background-image: url(../images/onwyrd_pattern_40px_blood.png);
+    /*** background-image: url(../images/onwyrd_pattern_40px_blood.png); ***/
     background-repeat: repeat;
     background-position: center;
 }
