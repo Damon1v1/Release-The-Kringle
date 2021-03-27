@@ -2,14 +2,17 @@ const router = require('express').Router();
 const Product = require('../models/Product');
 
 
+
 router.get('/menu', async (req, res) => {
   try {
     const productData = await Product.findAll({
       attributes: [
         'name',
         'description',
+        'image',
         'price'
     ],
+    
   });
     
     const menu = productData.map((menuItem) => 
@@ -28,15 +31,15 @@ router.get('/menu', async (req, res) => {
   
   // route to get one product
   router.get('/product/:id', async (req, res) => {
-    try{ 
+    try{
         const productData = await Product.findByPk(req.params.id);
-        if(!productData) {
-            res.status(404).json({message: 'No products with this id!'});
-            return;
-        }
+        
         const product = productData.get({ plain: true });
-        res.render('product', product);
+        res.render('menu', { 
+          menu,
+          layout : 'main' });
       } catch (err) {
+          console.log(err);
           res.status(500).json(err);
       };     
   });
