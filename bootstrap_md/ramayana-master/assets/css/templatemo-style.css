@@ -19,9 +19,20 @@ body {
 img {
 border: 1px solid #E08E79;
 }
- .logo {
-    
- }
+
+#menu img {
+
+    border: none;
+}
+
+.page-heading img {
+    border: none;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Basic */
 
 input, select, textarea {
@@ -996,7 +1007,7 @@ section.buttons .container-fluid {
     -webkit-transition: left 0.5s ease;
     -ms-transition: left 0.5s ease;
     transition: left 0.5s ease;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, );
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     border: 0;
     display: block;
     color: #FAF5E9;
