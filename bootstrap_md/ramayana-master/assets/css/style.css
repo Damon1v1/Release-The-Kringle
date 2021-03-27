@@ -177,3 +177,29 @@ h2 {
   .kringlecolor{
     background-color: #E0C279 !important;
   }
+
+  #sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .dessert-container {
+    background-color: #E08E79;
+  }
+
+  .dessert-txt {
+    color: #fff;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .padding-64 {
+    padding: 64px;
+  }
+
+  .padding-lr-bottom-64 {
+    padding: 0 64px 64px 64px;
+  }
