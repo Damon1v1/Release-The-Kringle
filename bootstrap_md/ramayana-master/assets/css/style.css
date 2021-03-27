@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f8fafb; }
+  background-color: #E08E79; }
 
 p {
   color: #b3b3b3;
@@ -173,3 +173,33 @@ h2 {
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #7e0cf5;
   opacity: .2; }
+
+  .kringlecolor{
+    background-color: #E0C279 !important;
+  }
+
+  #sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .dessert-container {
+    background-color: #E08E79;
+  }
+
+  .dessert-txt {
+    color: #fff;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .padding-64 {
+    padding: 64px;
+  }
+
+  .padding-lr-bottom-64 {
+    padding: 0 64px 64px 64px;
+  }
