@@ -6,7 +6,15 @@ User.init(
         primaryKey: true,
         autoIncrement: true
       },
-      username: {
+      first_name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      last_name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      email: {
         type: DataTypes.STRING,
         allowNull: false
       },
@@ -16,6 +24,13 @@ User.init(
         validate: {
           len: [4]
         }
+      },
+      points: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        options: {
+          "default" : 500
+        },
       }
     },
     {
