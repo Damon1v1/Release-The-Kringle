@@ -34,7 +34,7 @@ border: 1px solid #E08E79;
 }
 
 .col-md-12 p {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .simple-post img {
@@ -42,7 +42,7 @@ border: 1px solid #E08E79;
 }
 
 .simple-post p {
-    width: 50%;
+    width: 100%;
 }
 
 /* Basic */
