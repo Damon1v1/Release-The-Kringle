@@ -5,19 +5,20 @@
     </h2>
   </div>
   {{#each menu as |product|}}
+    <img src="/images/{{{image}}}" alt="{{name}}"/>
     <div class="dish col-md-5">
+        <p>{{id}}</p>
       <p>
-        {{product.id}}.
-        {{product.name}}
+        {{name}}
       </p>
       <p>
-        {{product.description}}
+        {{description}}
       </p>
     </div>
     <div class="col-md-7">
       <p>
         Price:
-        {{product.price}}
+        {{price}}
       </p>
     </div>
   {{/each}}
