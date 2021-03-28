@@ -45,6 +45,10 @@ border: 1px solid #E08E79;
     width: 100%;
 }
 
+.col-md-6 {
+    background-color:#7998E0
+}
+
 /***
 .row {
     background-color: #7998E0;
