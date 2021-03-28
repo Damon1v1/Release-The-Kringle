@@ -45,6 +45,16 @@ border: 1px solid #E08E79;
     width: 100%;
 }
 
+.row {
+    background-color: #7998E0;
+    background-image: url(../images/onwyrd_pattern_40px_blue.png);
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+
+
 /* Basic */
 
 input, select, textarea {
@@ -1429,4 +1439,12 @@ section.buttons .container-fluid {
     border-top: 0;
     margin-top: 0;
     padding-top: 0;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:none;
 }
