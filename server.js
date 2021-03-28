@@ -3,6 +3,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const serveStatic = require('serve-static');
 const menuRoutes = require('./controllers/menu-routes');
+const homeRoutes = require('./controllers/home-routes');
 
 const sequelize = require('./config/connection');
 
@@ -22,7 +23,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(menuRoutes);
+app.use(homeRoutes);
 app.use(serveStatic(path.join(__dirname, 'public')));
+
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
   sequelize.sync({ force: false });
