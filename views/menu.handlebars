@@ -1,25 +1,56 @@
-<div class="menu-container">
-  <div class="card-header col-md-10">
-    <h2>
-      Release the Kingle Menu
-    </h2>
+<!-- Page Heading -->
+<div class="page-heading">
+  <img src="/images/Viking_Axe.png" alt="Viking Axe">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Behold your Kringles await!</h1>
+        <p><strong>RELEASE THE KRINGLE!</strong> is proud to present our selection of kringles that would even
+          make Odin himself blush. Worthy to be feasted on in Valhallas intersanctums. May you be a Valkyrie or
+          a fallen warrior this is the perfect provision to consume in the shade of Yggdrasil.</p>
+      </div>
+    </div>
   </div>
-  {{#each menu as |product|}}
-    <img src="/images/{{{image}}}" alt="{{name}}"/>
-    <div class="dish col-md-5">
-        <p>{{id}}</p>
-      <p>
-        {{name}}
-      </p>
-      <p>
-        {{description}}
-      </p>
+</div>
+
+<!-- Tables -->
+<section class="tables">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>Kringles available to be released!</h2>
+        </div>
+        <div class="default-table">
+          <table>
+            <thead>
+              <tr>
+                <th>KRINGLES!</th>
+                <th></th>
+                <th>Description</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+
+            {{#each menu as |product|}}
+            <tbody>
+              <tr>
+                <td>{{name}}</td>
+                <td><img src="/images/{{{image}}}" alt="{{name}}" width="200" height="150" /></td>
+                <td>{{description}}</td>
+                <td>{{price}}</td>
+              </tr>
+            </tbody>
+            {{/each}}
+          </table>
+
+        </div>
+
+      </div>
     </div>
-    <div class="col-md-7">
-      <p>
-        Price:
-        {{price}}
-      </p>
-    </div>
-  {{/each}}
+  </div>
+</section>
+
+
+</div>
 </div>
