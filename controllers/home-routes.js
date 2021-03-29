@@ -1,6 +1,6 @@
 //homepage or login routes
 const router = require('express').Router();
-const { User } = require('../models/User');
+const  User  = require('../models/User');
 
 
 router.get('/home', async (req, res) => {
