@@ -6,12 +6,13 @@ const session = require('express-session');
 const routes = require('./controllers')
 const menuRoutes = require('./controllers/menu-routes');
 const homeRoutes = require('./controllers/home-routes');
+const aboutRoutes = require('./controllers/about-routes');
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3005;
 
 const hbs = exphbs.create();
 
@@ -37,6 +38,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 app.use(menuRoutes);
 app.use(homeRoutes);
+app.use(aboutRoutes);
 app.use(serveStatic(path.join(__dirname, 'public')));
 
 sequelize.sync({ force: false }).then(() => {
