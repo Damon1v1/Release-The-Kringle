@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #E08E79; }
+  background-color: #7998E0; }
 
 p {
   color: #b3b3b3;
@@ -202,4 +202,12 @@ h2 {
 
   .padding-lr-bottom-64 {
     padding: 0 64px 64px 64px;
+  }
+
+  .viking-head img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: none
   }
