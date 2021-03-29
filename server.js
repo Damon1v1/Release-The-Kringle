@@ -5,12 +5,13 @@ const serveStatic = require('serve-static');
 const session = require('express-session');
 const menuRoutes = require('./controllers/menu-routes');
 const homeRoutes = require('./controllers/home-routes');
+const aboutRoutes = require('./controllers/about-routes');
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3005;
 
 const hbs = exphbs.create();
 
@@ -35,6 +36,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(menuRoutes);
 app.use(homeRoutes);
+app.use(aboutRoutes);
 app.use(serveStatic(path.join(__dirname, 'public')));
 
 app.listen(PORT, () => {
