@@ -29,10 +29,8 @@ User.init(
     },
     points: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      options: {
-        "default" : 500
-      },
+      allowNull: true,
+      defaultValue: 500
     }
   },
   {
