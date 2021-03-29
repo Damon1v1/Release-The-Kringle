@@ -15,15 +15,6 @@ CREATE TABLE product(
     PRIMARY KEY (id)
 );
 
-CREATE TABLE user(
-    id INT NOT NULL AUTO_INCREMENT,
-    username VARCHAR(50) NOT NULL,
-    password VARCHAR(50) NOT NULL,
-    first_name VARCHAR(50) NOT NULL,
-    last_name VARCHAR(50) NOT NULL,
-    PRIMARY KEY (id)
-);
-
 CREATE TABLE loyalty(
     id INT NOT NULL AUTO_INCREMENT,
     user_id INT,
