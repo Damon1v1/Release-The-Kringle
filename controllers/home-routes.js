@@ -2,6 +2,9 @@
 const router = require('express').Router();
 const  User  = require('../models/User');
 
+router.get('/rewards', (req, res) => {
+  res.render('rewards');
+});
 
 router.get('/home', async (req, res) => {
     res.render('homepage');

@@ -63,4 +63,8 @@ router.post('/logout', (req, res) => {
   }
 });
 
+router.get('/rewards', (req, res) => {
+  res.render('rewards');
+});
+
 module.exports = router;
